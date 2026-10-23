@@ -19,3 +19,25 @@ input,select,textarea{background:var(--panel);color:var(--fg);border:1px solid v
 .link{background:none;border:0;color:var(--fg);text-decoration:underline;cursor:pointer;font:inherit;padding:0}
 footer{padding:2rem 1.5rem;font-size:.9rem}main:has(.form){padding-bottom:4rem}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ---- Cole isto no FINAL do seu src/styles.css ---- */
+.sub{max-width:40rem;margin:0 0 2rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn.ghost{background:transparent;color:var(--fg)}.btn.ghost:hover{background:var(--fg);color:var(--bg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}.two p{max-width:36rem}
+.principles{list-style:none;padding:0;margin:0}
+.principles li{padding:1rem 0;border-top:1px solid var(--line);font:600 1.15rem/1.35 "Bricolage Grotesque",Arial,sans-serif}
+.principles li:last-child{border-bottom:1px solid var(--line)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:2rem}
+.col{border-top:2px solid var(--fg);padding-top:1rem}.col.dashed{border-top-style:dashed}.col.thin{border-top:1px solid var(--mute)}
+.col h3{font-size:1.2rem}.col p{font-size:.95rem;margin:.3rem 0 1rem}
+.col ul{list-style:none;margin:0;padding:0}.col li{padding:.4rem 0;border-bottom:1px solid var(--line)}
+.tl{list-style:none;margin:0;padding:0 0 0 1.5rem;border-left:1px solid var(--mute)}
+.tl li{position:relative;padding:0 0 2rem}
+.tl li::before{content:"";position:absolute;left:calc(-1.5rem - 5px);top:.6rem;width:9px;height:9px;background:var(--bg);border:1.5px solid var(--fg);border-radius:50%}
+.tl b{display:block;font:700 1.15rem "Bricolage Grotesque",Arial,sans-serif}.tl span{color:var(--mute)}
+.crow{display:flex;justify-content:space-between;gap:1rem;padding:1.1rem 0;border-top:1px solid var(--line);text-decoration:none}
+.crow:last-of-type{border-bottom:1px solid var(--line)}.crow:hover span:first-child{text-decoration:underline}
+.crow span:last-child{text-align:right;overflow-wrap:anywhere}
+nav{flex-wrap:wrap}
+@media(max-width:46rem){.two{grid-template-columns:1fr;gap:2rem}nav{gap:.75rem;font-size:.85rem}.top .wrap{height:auto;padding-top:.75rem;padding-bottom:.75rem}}
