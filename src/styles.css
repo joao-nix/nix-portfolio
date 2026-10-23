@@ -41,3 +41,5 @@ footer{padding:2rem 1.5rem;font-size:.9rem}main:has(.form){padding-bottom:4rem}
 .crow span:last-child{text-align:right;overflow-wrap:anywhere}
 nav{flex-wrap:wrap}
 @media(max-width:46rem){.two{grid-template-columns:1fr;gap:2rem}nav{gap:.75rem;font-size:.85rem}.top .wrap{height:auto;padding-top:.75rem;padding-bottom:.75rem}}
+fieldset{border:1px solid var(--line);padding:1rem;display:grid;gap:1rem;margin:0}
+legend{color:var(--mute);padding:0 .5rem}
