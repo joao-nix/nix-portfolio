@@ -1,0 +1,21 @@
+:root{--bg:#0A0A0A;--panel:#171717;--fg:#F4F4F4;--mute:#A3A3A3;--line:#2a2a2a;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1.0625rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3,.brand{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;letter-spacing:-.025em}
+a{color:inherit}:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}.mute{color:var(--mute)}
+.top{border-bottom:1px solid var(--line)}.top .wrap{display:flex;justify-content:space-between;align-items:center;height:3.5rem}
+.brand{font-weight:800;font-size:1.25rem;text-decoration:none}nav{display:flex;gap:1.25rem}nav a{color:var(--mute);text-decoration:none}nav a:hover{color:var(--fg)}
+.hero{padding-top:6rem;padding-bottom:5rem}h1{font-size:clamp(2.2rem,6.5vw,4.8rem);line-height:1.04;font-weight:800;max-width:16ch;margin:1rem 0 1.5rem}
+.lead{max-width:38rem;color:var(--mute);font-size:1.2rem}
+section.wrap{padding-top:3.5rem;padding-bottom:3.5rem;border-top:1px solid var(--line)}h2{font-size:2.2rem;margin:0 0 1.5rem}h3{font-size:1.4rem;margin:0}
+.btn{display:inline-block;padding:.75rem 1.4rem;border:1px solid var(--fg);background:var(--fg);color:var(--bg);font:500 1rem inherit;cursor:pointer;text-decoration:none}.btn:hover{background:transparent;color:var(--fg)}
+.item{padding:1.75rem 0;border-top:1px solid var(--line)}.item img{max-width:100%;max-height:26rem;display:block;margin:1rem 0}
+.row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1rem;align-items:baseline}.pre{white-space:pre-wrap}
+.tech{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0}.tech li{border:1px solid var(--line);padding:.15rem .7rem;font-size:.9rem;color:var(--mute)}
+.form{display:grid;gap:1rem;max-width:36rem;margin:1rem 0 2rem}label{display:grid;gap:.3rem;color:var(--mute);font-size:.95rem}
+input,select,textarea{background:var(--panel);color:var(--fg);border:1px solid var(--line);padding:.6rem .75rem;font:inherit}
+.list{list-style:none;padding:0;margin:0 0 2.5rem}.list li{display:flex;justify-content:space-between;gap:1rem;padding:.6rem 0;border-top:1px solid var(--line)}
+.link{background:none;border:0;color:var(--fg);text-decoration:underline;cursor:pointer;font:inherit;padding:0}
+footer{padding:2rem 1.5rem;font-size:.9rem}main:has(.form){padding-bottom:4rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
