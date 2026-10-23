@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { supabase, upload, STATUS, Project, Post } from './lib'
+import ContentEditor from './ContentEditor'
 const emptyP: Project = { title: '', category: '', status: 'idea', summary: '', tech: [], image_url: null, sort: 0 }
 const emptyPost: Post = { title: '', body: '', image_url: null }
 export default function Admin() {
@@ -50,5 +51,6 @@ export default function Admin() {
       <div><button className="btn">Publicar</button></div></form>
     <ul className="list">{posts.map(x => <li key={x.id}><span>{x.title}</span>
       <button className="link" onClick={() => confirm('Apagar "' + x.title + '"?') && run(() => supabase.from('posts').delete().eq('id', x.id!))}>Apagar</button></li>)}</ul>
+  <ContentEditor setMsg={setMsg} />
   </main>)
 }
